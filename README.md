@@ -22,7 +22,7 @@ Ce cinéma décide de passer le cap du digital en faisant appel à une équipe d
 |-----------------------------|-------------------|
 | Data Analysis               | Python, Pandas, Matplotlib, Seaborn, Plotly |
 | Machine Learning            | Scikit-learn |
-| Data Visualisation          | Power BI | Excel
+| Data Visualisation          | Power BI, Excel | 
 | Application Web             | Streamlit |
 | Gestion de projet           | Airtable, méthode Agile |
 | Sources de données          | IMDB, Données INSEE / sites publics |

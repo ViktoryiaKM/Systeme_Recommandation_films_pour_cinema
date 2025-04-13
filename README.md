@@ -9,8 +9,8 @@ Ce cinéma décide de passer le cap du digital en faisant appel à une équipe d
 
 **1. Mieux connaître son audience** :  
 - 🔍 Mener une **étude de marché** locale pour comprendre le profil des spectateurs potentiels.  
-- 📊 Créer un **dashboard Power BI** affichant les indicateurs clés liés aux films et à la population.  
-**2. Proposer des films adaptés à ses préférences**:  
+- 📊 Créer un **dashboard Power BI** affichant les indicateurs clés liés aux films et à la population.
+- **2. Proposer des films adaptés à ses préférences**:   
 - 🤖 Développer un **algorithme de recommandation** personnalisé basé sur le comportement utilisateur.  
 - 🌐 Déployer une **application Streamlit** permettant de recommander des films selon les goûts des utilisateurs.  
 

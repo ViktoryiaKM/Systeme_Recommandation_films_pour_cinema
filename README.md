@@ -7,7 +7,7 @@ Ce cinéma décide de passer le cap du digital en faisant appel à une équipe d
 
 ## 🎯 Mission
 
-**1. Mieux connaître l’audience cinéma** :  
+**1. Mieux connaître l’audience du cinéma** :  
 -  Réalisation d’une **étude de marché locale** pour identifier le profil des spectateurs potentiels..  
 -  Conception d’un **tableau de bord (Excel / Power BI)** affichant les indicateurs clés : types de films préférés, répartition démographique, etc.
 

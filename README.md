@@ -36,8 +36,7 @@ Ce cinéma décide de passer le cap du digital en faisant appel à une équipe d
 
 2. **Exploration et préparation des données**
    - Importation des datasets IMDB
-   - Nettoyage, jointures, traitement des valeurs manquantes
-   - Analyse exploratoire (corrélations, tendances, préférences)
+   - Nettoyage, jointures, traitement des valeurs manquantes, analyse exploratoire (corrélations, tendances)  
 
 3. **Développement du système de recommandation**
    - Mise en place d’un algorithme basé sur les similarités entre films
@@ -50,8 +49,7 @@ Ce cinéma décide de passer le cap du digital en faisant appel à une équipe d
 ## 🚀 Résultat
 **1. Un étude de marché avec comme résultat un Dashboard Indicateurs clés affichés :**  
 - Statistiques démographiques de la Creuse
-- Tendances par âge / genre / intérêt
-- Genres de films les plus populaires
+- Tendances par âge / genre / intérêt, genres de films les plus populaires
   
 **=> Contexte et le résultat d'etude de marché:**  [PREZ_projet_et_etude_marche.pdf](https://github.com/ViktoryiaKM/Systeme_Recommandation_films_pour_cinema/blob/main/PREZ_projet_syst%C3%A8me_recommandation_films.pdf)
 

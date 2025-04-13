@@ -52,7 +52,7 @@ Ce cinéma décide de passer le cap du digital en faisant appel à une équipe d
 - Statistiques démographiques de la Creuse
 - Tendances par âge / genre / intérêt
 - Genres de films les plus populaires
-  ![image](https://github.com/user-attachments/assets/1cbb5175-b5b0-440c-b14a-e1b9d7afeb53)
+  [PREZ_projet_systeme_recommandation_films.pdf](https://github.com/ViktoryiaKM/Systeme_Recommandation_films_pour_cinema/blob/main/PREZ_projet_syst%C3%A8me_recommandation_films.pdf)
 
 **2. Un outil complet, visuel et interactif qui permet au cinema de:**  
 - **cibler son audience et choisir sa programmation** intelligemment en proposant des films suceptibles de plaire

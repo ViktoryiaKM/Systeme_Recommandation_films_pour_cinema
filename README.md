@@ -51,12 +51,12 @@ Ce cinéma décide de passer le cap du digital en faisant appel à une équipe d
 **1. Un étude de marché avec comme résultat un Dashboard Indicateurs clés affichés :**  
 - Statistiques démographiques de la Creuse
 - Tendances par âge / genre / intérêt
-- Genres de films les plus populaires
+- Genres de films les plus populaires  
   [PREZ_projet_systeme_recommandation_films.pdf](https://github.com/ViktoryiaKM/Systeme_Recommandation_films_pour_cinema/blob/main/PREZ_projet_syst%C3%A8me_recommandation_films.pdf)
 
 **2. Un outil complet, visuel et interactif qui permet au cinema de:**  
-- **cibler son audience et choisir sa programmation** intelligemment en proposant des films suceptibles de plaire
-- **améliorer la fréquentation** du cinéma sur le long terme
+- cibler son audience et choisir sa programmation intelligemment en proposant des films suceptibles de plaire
+- améliorer la fréquentation du cinéma sur le long terme
 
 [Systeme_recommendation_films%20.gif](https://github.com/ViktoryiaKM/Systeme_Recommandation_films_pour_cinema/blob/main/Systeme_recommendation_films%20.gif)
 

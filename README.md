@@ -1,19 +1,19 @@
 # 🎬 Système de Recommandation de films pour un cinéma local
-*Réalisé dans le cadre de ma formation avec DataCoach Academy - Plateforme de formation en ligne*
+*Projet collaboratif réalisé dans le cadre de ma formation à la Wild Code School.*
 ## Contexte
 
 Un cinéma en perte de vitesse situé dans la Creuse souhaite se réinventer. Il ne possède d’aucune information sur ses clients et constate une forte baisse de la fréquentation de ses salles.
 Ce cinéma décide de passer le cap du digital en faisant appel à une équipe de Data Analystes.
 
-## 🎯 Objectifs
+## 🎯 Mission
 
-**1. Mieux connaître son audience** :  
--  Mener une **étude de marché** locale pour comprendre le profil des spectateurs potentiels.  
--  Créer un **Tableau de Bord Excel/Power BI** affichant les indicateurs clés liés aux types de films et à la population.
+**1. Mieux connaître l’audience cinéma** :  
+-  Réalisation d’une **étude de marché locale** pour identifier le profil des spectateurs potentiels..  
+-  Conception d’un **tableau de bord (Excel / Power BI)** affichant les indicateurs clés : types de films préférés, répartition démographique, etc.
 
-**2. Proposer des films adaptés aux préférences de la population locale**:   
--  Développer un **algorithme de recommandation** personnalisé basé sur le comportement utilisateur.  
--  Déployer une **application Streamlit** permettant de recommander des films selon le public cible.  
+**2. Créer un outil qui propose des films adaptés aux préférences locales**:   
+-  Développement d'un **algorithme de recommandation** personnalisé basé sur le comportement utilisateur.  
+-  Conception et déploiement d’une application Streamlit capable de recommander des films en fonction du profil du public cible..  
 
 
 ## 🛠️ Outils & Technologies
@@ -51,7 +51,7 @@ Ce cinéma décide de passer le cap du digital en faisant appel à une équipe d
 => Un étude de marché avec comme résultat un Dashboard **Indicateurs clés affichés :**  
 - Statistiques démographiques de la Creuse
 - Tendances par âge / genre / intérêt
--  Genres de films les plus populaires
+- Genres de films les plus populaires
   
 => Un outil complet, visuel et interactif qui permet au cinema de:  
 - **cibler son audience et choisir sa programmation** intelligemment en proposant des films suceptibles de plaire

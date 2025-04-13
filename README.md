@@ -58,3 +58,4 @@ Ce cinéma décide de passer le cap du digital en faisant appel à une équipe d
 - **cibler son audience et choisir sa programmation** intelligemment en proposant des films suceptibles de plaire
 - **améliorer la fréquentation** du cinéma sur le long terme
 
+[Systeme_recommendation_films .gif](https://github.com/ViktoryiaKM/ysteme_Recommandation_films_pour_cinema/blob/main/Systeme_recommendation_films .gif)

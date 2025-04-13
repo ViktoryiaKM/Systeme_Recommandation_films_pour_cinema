@@ -1,5 +1,5 @@
 # 🎬 Système de Recommandation de films pour un cinéma local
-
+*Réalisé dans le cadre de ma formation avec DataCoach Academy - Plateforme de formation en ligne*
 ## Contexte
 
 Un cinéma en perte de vitesse situé dans la Creuse souhaite se réinventer. Il ne possède d’aucune information sur ses clients et constate une forte baisse de la fréquentation de ses salles.

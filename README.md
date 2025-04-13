@@ -48,12 +48,12 @@ Ce cinéma décide de passer le cap du digital en faisant appel à une équipe d
    - Possibilité pour l'utilisateur de saisir un film apprécié → recommandations automatiques
 
 ## 🚀 Résultat
-> Un étude de marché avec comme résultat un Dashboard **Indicateurs clés affichés :**  
+=> Un étude de marché avec comme résultat un Dashboard **Indicateurs clés affichés :**  
 - Statistiques démographiques de la Creuse
 - Tendances par âge / genre / intérêt
 -  Genres de films les plus populaires
   
-> Un outil complet, visuel et interactif qui permet au cinema de:  
+=> Un outil complet, visuel et interactif qui permet au cinema de:  
 - **cibler son audience et choisir sa programmation** intelligemment en proposant des films suceptibles de plaire
 - **améliorer la fréquentation** du cinéma sur le long terme
 

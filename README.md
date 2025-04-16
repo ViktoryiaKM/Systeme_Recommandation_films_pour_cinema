@@ -57,5 +57,5 @@ Ce cinéma décide de passer le cap du digital en faisant appel à une équipe d
 - cibler son audience et choisir sa programmation intelligemment en proposant des films suceptibles de plaire
 - améliorer la fréquentation du cinéma sur le long terme
 
-**=> Système de recommendation de films:** [Systeme_recommendation_films%20.gif](https://github.com/ViktoryiaKM/Systeme_Recommandation_films_pour_cinema/blob/main/Systeme_recommendation_films%20.gif)
+**=> Système de recommendation de films:** [Visuel_Systeme_recommendation_films_Streamlit.gif](https://github.com/ViktoryiaKM/Systeme_Recommandation_films_pour_cinema/blob/main/Visuel_Systeme_recommendation_films_Streamlit.gif)
 

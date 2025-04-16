@@ -1,24 +1,45 @@
+# Ce script Streamlit permet de recommander des films en fonction d’un film sélectionné par l’utilisateur, selon 3 univers différents :
+
+# - Succès intemporels (blockbusters)
+# - Famille / enfant
+# - Arts et essai
+
+# Il utilise des scripts de Machine Learning personnalisés pour chaque catégorie, et affiche les affiches + résumés des films recommandés, avec un design soigné en CSS.
+
 #pip install streamlit
 #pip install --upgrade deepl
 #pip install -U scikit-learn
 
+#  Import des bibliothèques
 import streamlit as st
 import pandas as pd
 import deepl
+
+# Import des modules personnalisés
 import script_enfant
 import script_art_essai
 import script_blockbuster
 import global_variable as gv
 
+# Chargement des datasets
 df_film_enfant = pd.read_csv("df_titres_image_enfants.csv")
 df_film_blockbuster = pd.read_csv("df_titres_blockbusters.csv")
 df_film_art_et_essaie = pd.read_csv("df_titres_image_arts_essai.csv")
-df_film = pd.concat([df_film_art_et_essaie.iloc[:,1:],df_film_blockbuster.iloc[:,1:],df_film_enfant.iloc[:,1:]])
+
+# Fusion des trois catégories de films (on ignore la première colonne)
+df_film = pd.concat([
+    df_film_art_et_essaie.iloc[:,1:],
+    df_film_blockbuster.iloc[:,1:],
+    df_film_enfant.iloc[:,1:]])
+
+# Lien vers les images d'affiche
 site_image="https://image.tmdb.org/t/p/w780"
+
+# Clé d’API pour la traduction Deepl
 auth_key = "28c7bfdf-5e26-4497-ba77-e223074bddf2:fx"
 translator = deepl.Translator(auth_key)
 
-
+# Personnalisation de l'interface (CSS)
 st.markdown(
     """
     <style>
@@ -104,6 +125,9 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+# Affichage de l’image de couverture et du titre principal
+
 st.image("cinema_creuse_ajuste.jpg", use_column_width=True)
 st.header(
     "Explorez les films avec notre système de recommandation intelligent"
@@ -111,7 +135,7 @@ st.header(
 
 st.text("Selectionner un theme selon vos préférences:")
 
-# Parametrage des boutons:
+# Boutons de sélection par thème
 butcol1, butcol2, butcol3 = st.columns(3)
 
 with butcol1:
@@ -129,9 +153,10 @@ with butcol3:
         gv.df_active=df_film_art_et_essaie["French_title"]
         gv.fonction_ml="art_et_essaie"
 
-# Parametrage berre de recherche:
+# Sélecteur de film: Parametrage barre de recherche
 film_select= st.selectbox("recherche film",gv.df_active,index=None,placeholder="Sélectionnez votre film.")
 
+# Affichage des recommandations
 if film_select!=None:
     if gv.fonction_ml=="enfant":
         film1,film2,film3,film4=script_enfant.film_enfant(film_select)
@@ -142,6 +167,8 @@ if film_select!=None:
     st.text("Nos recommendations pour les films similaires:")
 
     filmcol1, filmcol2, filmcol3, filmcol4 = st.columns(4)
+
+    # Fonction pour afficher chaque film recommandé avec affiche et description:
 
     def afficher_film(film_title):
         backdrop_path = df_film[df_film["French_title"] == film_title]["backdrop_path"].values[0]
@@ -155,6 +182,8 @@ if film_select!=None:
             st.write("Synopsis absent")
         else:
             st.markdown(f"<div class='film-description'>{translator.translate_text(overview, target_lang='FR')}</div>", unsafe_allow_html=True)
+    
+     # Affichage des 4 films recommandés:
 
     with filmcol1:
         afficher_film(film1)

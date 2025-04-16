@@ -1,56 +1,37 @@
+# Objectif :Créer un système de recommandation de films similaires à partir d’un film donné, en utilisant la méthode des k plus proches voisins (KNN) après normalisation et réduction de dimensionnalité avec PCA.
+
+# Importer les bibliotheques :
 import pandas as pd
 from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
+# 1. Chargement et préparation des données
 
+## Charger le dataset
 df_art_essai = pd.read_csv('df_dummies_arts_essaie_ML_def.csv')
 
-# Sélection des colonnes numériques
+# 2. Prétraitement des données numériques
+
+## Sélection des colonnes numériques
 X_art_essai = df_art_essai.select_dtypes(include=['number'])
 
-# Normalisation des données
+## Normalisation des données
 scaler_art_essai = StandardScaler()
 X_scaled_art_essai = scaler_art_essai.fit_transform(X_art_essai)
 
-# Réduction de la dimensionnalité avec PCA après avoir essayé plusieurs components je trouve que 40 me donne les meilleurs resultats
+## Réduction de la dimensionnalité avec PCA après avoir essayé plusieurs components je trouve que 40 me donne les meilleurs resultats
 pca_art_essai = PCA(n_components=446)
 X_pca_art_essai = pca_art_essai.fit_transform(X_scaled_art_essai)
 
-# Modèle de Nearest Neighbors
+# 3. Modèle de Nearest Neighbors (k=5): pour identifier les films les plus proches dans l’espace des composantes principales
+
+## Initialisation du modèle KNN, l'attribus 'algorithm auto' pour qu'il selectionne le meilleur algo automatiquement
 modelNN_art_essai = NearestNeighbors(n_neighbors=5, algorithm='auto')
 modelNN_art_essai.fit(X_pca_art_essai)
 
 
-# Recherche du film par mot clé
-# titre_1 = input('Saisissez un mot clé: ').lower()
-# titre_2 = df_art_essai[df_art_essai['primaryTitle'].str.lower().str.contains(titre_1)]
-
-# if not titre_2.empty:
-#     # Afficher les résultats de la recherche
-#     dict_titre = dict(titre_2['primaryTitle'])
-#     print(f'{dict_titre}')
-    
-#     # Sélection du film souhaité
-#     var_1 = int(input("Insérez le numéro du film souhaité: "))
-    
-#     if var_1 in df_art_essai.index:
-#         # Utiliser les données transformées par PCA pour trouver l'index
-#         distances, indices = modelNN_art_essai.kneighbors([X_pca_art_essai[df_art_essai.index.get_loc(var_1)]])
-        
-#         print(f"Films similaires à '{df_art_essai['primaryTitle'].iloc[var_1]}':")
-#         for idx in indices[0]:
-#             print(df_art_essai['primaryTitle'].iloc[idx])
-#     else:
-#         print(f"L'index {var_1} n'est pas valide.")
-# else:
-#     print(f"Aucun film trouvé avec le mot clé '{titre_1}'.")
-
-
-
-
-
-
+# 4. Fonction de recommandation qui Retourne les 4 films les plus similaires à un film donné.
 
 def film_art_essai(titre):
     if titre in df_art_essai['French_title'].values:
